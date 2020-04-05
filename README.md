@@ -1,48 +1,35 @@
-# (Yên tâm không hại máy tính mày đâu)
-# - Cài đặt git trên windows:
-- Bước 1: vào trang [git](https://git-scm.com/download/win), đợi nó down về thôi.
-- Bước 2: Cứ next là xong :D.
-# - Cài đặt python3.8 trên windows:
-- Bước 1: vào trang [python.com](https://www.python.org/downloads/)
-- Bước 2: download về thôi
-- Bước 3: setup, cứ next cho tới gặp cái hình này [![N|solid](https://docs.python.org/3/_images/win_installer.png)
-- Bước 4: click vào "Add Python3.x to PATH" xong mới click "Install now"
-### - Thế là xong phần cài đặt các thứ cần thiết rồi đấy, easy nhờ =))
+# Welcome to back-end with Django
+> Sở dĩ t chọn Django làm back-end vì t biết mỗi cái này =))))
 
-# Do somthing with python:
-- Tải pip(cái này dài dòng nên muốn thì coi trên mạng, khong để t teamview setup môi trường cho)(mày cài được thì xem như m hay)
-- Tải django(framework cho back-end) syntax: pip3 install django==3.0
-- Tải thêm cái package env(quản lý môi trường)(không cần thiết lắm)
-- Rồi xong phần setup với python,
-- VÃ MỒ HỒI CHƯA TA :3
-# Do something with git:
-- Ở múc độ cơ bản thì git dùng để quản lí source có 3 chức năng chính là: add, commit, push.
-- Đầu tiên tất nhiên ta cần down project về chứ nhỉ :D
-- Vào [link](https://github.com/enternity/mysite.git) này. Thấy gì không đó là nơi source code của project ấy.
-- Giờ clone project về thôi
-- Trở ra destop
-- Nhấn chuột phải + click vào git bash here á.
-- Gõ: git clone https://github.com/enternity/mysite.git
-- Gõ: git checkout dev
-- Thấy thư muc nào hiện ngoài desktop chưa. Đó là thư mục chứa source code project đấy. (Ảo chưa, cần gì lên trình duyệt tải, magic!!!!)
-- Tới đây đã là thành công lớn rồi.
-## Chắc m choáng rồi nhờ. M đang nghĩ what the f * c * am i doing? 
-## Thôi thì ráng, người lớn mà =)), master cái git này là trùm lắm rồi :V
-## Có issue gì cứ raise lên ha, cái tao đang viết mai giờ gọi là markdown, ảo chưa, cứ như html nhờ :v
+# How to woking with Django
+1. Bây giờ t với m mới đang làm với mục các bài thì quan tâm thư mục ```article``` thôi.
+2. Những file ```html``` thì bỏ trong thư mục ```template``` (bên trong ```article```)
+3. Khi mà những chỗ cần ```href, link, source, etc```  mà cần ```css/js``` thì nhớ thêm 
+```{% static 'đường dẫn'%}```. Vd ```{% static 'js/sad.js' %}```
+4. Đương nhiên tất cả các thư mục ```js, css``` đều nằm trong ```static```
+5. Với image cho back-ground thì cũng trong ```static``` luôn.
+6. Khi ```routing``` thì phức tạp hơn tí xíu. Nhưng cái này để  sau.
 
-# Làm việc với github:
-Git là nơi mày viết mấy câu lệnh loằn ngà loằn ngoằn còn github là nơi chứa source code của m
-- Quy trình nôm na là thế này:
-    - Lưu lại source code m viết, trên bash gõ: ```git stautus``` lệnh này có nghĩa là kiểm tra xem m đã thay đổi những file gì nó sẽ hiện lên.
-    - Nếu đã ok rồi, thì gõ ```git add .``` lệnh này có nghĩa là lưu lại tất cả những thay đổi m làm.
-    - Sau đó, ```git commit -m"[Message]"```: message ở đây m muốn viết gì cũng được. Lệnh này có nghĩa là m đã thay đổi gì trong project để t còn biết. Không cần đọc source code chỉ cần đọc commit là hiểu m làm gì. Example: ```git commit -m"[done]thêm thanh tìm kiếm ở home page"```
-    - Sau đó, để tống lên server chỉ cần ```git push```. :D
-- Thêm về git:
-    - Có những lúc t viết xong push lên, m cần phải lấy code mới về trước khi làm việc thì gõ ```git fetch```, sau đó ```git pull``` là xong. Có những trường hợp xảy ra khác nữa nhưng khi gặp rồi t giải thích rồi hướng dẫn luôn cho khỏi mắc công.
-    - Nếu định làm developer thì cái này cần phải học.(Điểm cộng cực to trong măt HR nghe đồn thế hihi).
-# Làm việc với bash:
-- Chắc m chưa quen với việc dùng BASH, t cũng thế lần đầu gõ lệnh thấy không quen gì cả, click chuột không nhanh hơn à. Không click chuột lâu hơn  nếu xét về mặt thời gian xử lí của máy tính :D
-- Vd m muốn copy 1 đoạn nào đấy thì lấy con chuột yêu thích của mọi người xong rồi bold đen như bình thường, thay vì ```Ctrl + C```, thì nhấn ```Ctrl + Shift + C```
-- Còn muốn dán thì thay vì ```Ctrl + V``` thì ```Shift + phím Insert```
-- Với lại m cũng không cần gõ đúng hết. Ví dụ m gõ ```git com``` thì nhấn thêm nút ```tab``` là xong. Cái này gọi là nhắc lệnh cho nhanh.
-- Series làm quen với bash với git hôm nay ít thôi, chứ ngộp :D.
+# Welcome to the hell: Github.
+1. Trước hết thì workflow của github trước:
+[Workflow github](https://res.cloudinary.com/practicaldev/image/fetch/s--M_fHUEqA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/128hsgntnsu9bww0y8sz.png)
+> Ghê chưa. Không hiểu cũng chả sao cả :3.
+
+2. Khi mở máy ra code. Trước hết nên lấy code mới nhất từ server về, cho đỡ *Rắc Rối* sau này. Lí do t bôi chữ rắc rối vì nó cả là 1 chủ đề :3. Nói chung muốn ko *Rắc Rối* thì nên mỗi lần làm thì kiểm tra code mình đang làm là mới nhất được lấy trên server về.
+    1. Cú pháp: ```git fetch```. Sau đó ```git pull```. Thế là xong.
+3. Upload code lên server. Tuần tự các bước như sau:
+    1. Mở ```bash``` trong thư mục chứa project ```git status``` (Kiểm tra xem đã thay đổi những gì).
+    2. ```git add .```(Lưu ý có dấu chấm sau chữ ```add```).
+    3. ```git commit -m "message"```. Với message tùy ý. Quy ước của t với m khi làm xong tính năng gì mà push lên thì thêm ```[done]``` ở trước message. ```[error] nếu cái gì đó lỗi```. ```[modify] ``` là chỉnh sửa file gì đó. Vd  messages như sau: ```[done] homepage.html ```. ```[error] can't load style.css ```, ```[modify] homepage.html```. 
+    4. Bước cuối ```git push```
+4. *Lưu ý nhỏ*: Nên kiểm tra đang ở nhánh nào trước khi push. Nhưng cái này để t setup trước nên ko cần lo lắng lắm. Kiểm tra đang ở trên branch nào: ```git branch -a```(Nhánh có đánh dấu *).
+5. Ví dụ như m làm rối tung rối mù lên, muốn đưa nó về mặc định ban đầu thì tuần tự các bước sau:
+    1. ```git status``` kiểm tra xem m đã thay đổi những gì. Vd: nó hiện lên: 
+    ```sh
+        modify: article/static/main.css
+        delete: article/templates/homepage.html
+    ```
+    2. Lựa những file m muốn đưa về mặc định, vd như muốn đưa về  mặc định file ```main.css``` thì gõ ```git checkout article/static/main.css```. Hoặc muốn đưa về default cả thư mục ```article```
+    thì ```git checkout article/```.
+
+# Còn cái bước chạy localhost nữa nhưng để sau. Cái này dễ nên ko sao.
