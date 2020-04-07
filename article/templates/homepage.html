@@ -75,7 +75,7 @@
 						<span class="icon icon-bar"></span>
 						<span class="icon icon-bar"></span>
 					</button>
-					<a href="#" class="navbar-brand">Funny Vocab</a>
+					<a href="{% url 'homepage' %}" class="navbar-brand">Funny Vocab</a>
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
@@ -172,12 +172,12 @@
     					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>FUNNY VOCAB TEAM</span></h2>
     				</div>
     				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
-    					<form action="#" method="post">
+						<form method="post"> {% csrf_token %}
     						<label>NAME</label>
-    						<input name="fullname" type="text" class="form-control" id="fullname">
+    						<input name="fullname" type="text" class="form-control" id="fullname" maxlength="25" required>
    						  	
                             <label>EMAIL</label>
-    						<input name="email" type="email" class="form-control" id="email">
+    						<input name="email" type="email" class="form-control" id="email" maxlength="121" required>
    						  	
                             <label>MESSAGE</label>
     						<textarea name="message" rows="4" class="form-control" id="message"></textarea>
