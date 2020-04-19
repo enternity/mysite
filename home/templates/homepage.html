@@ -16,7 +16,6 @@
 		<link rel="stylesheet" href="{% static 'homepage/css/style.css' %}">
 		<script src="{% static  'js/jquery.js'%}"></script>
 		<script src="{% static  'js/bootstrap.min.js'%}"></script>
-        <script src="{% static  'js/jquery.singlePageNav.min.js'%}"></script>
 		<script src="{% static  'js/typed.js'%}"></script>
 		<script src="{% static  'js/wow.min.js'%}"></script>
 		<script src="{% static  'js/custom.js'%}"></script>
@@ -172,17 +171,18 @@
     					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>FUNNY VOCAB TEAM</span></h2>
     				</div>
     				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
-						<form method="post"> {% csrf_token %}
-    						<label>NAME</label>
-    						<input name="fullname" type="text" class="form-control" id="fullname" maxlength="25" required>
-   						  	
-                            <label>EMAIL</label>
-    						<input name="email" type="email" class="form-control" id="email" maxlength="121" required>
-   						  	
-                            <label>MESSAGE</label>
-    						<textarea name="message" rows="4" class="form-control" id="message"></textarea>
-    						
-                            <input type="submit" class="form-control">
+						<form method="post" action={% url 'feedback' %}> 
+						    {% csrf_token %}
+							<label for="id_name">Name</label> 
+							<input type="text" class="form-control" name="name" maxlength="25" required id="id_name">
+
+							<label for="id_email">Email</label> 
+							<input type="email" class="form-control" name="email" maxlength="121" required id="id_email">
+							
+							<label for="id_message">Message</label> 
+							<textarea name="message" rows="4" class="form-control" required id="id_message"></textarea>
+    										
+                            <input type="submit" class="form-control"> 
     					</form>
     				</div>
     				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
